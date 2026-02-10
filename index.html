@@ -97,7 +97,7 @@ function Scorecard({ label, value, color = C.white }) {
         lineHeight: 1.2, opacity: 0.85,
       }}>{label}</div>
       <div style={{
-        fontSize: 16, fontWeight: 700, color, lineHeight: 1.1, whiteSpace: "nowrap",
+        fontSize: 24, fontWeight: 700, color, lineHeight: 1.1, whiteSpace: "nowrap",
       }}>{value}</div>
     </div>
   );
@@ -226,8 +226,10 @@ function App() {
     return (
       <div style={{ marginBottom: 12 }}>
         <label style={{
-          display: "block", fontSize: 9, fontWeight: 600, color,
-          textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 3,
+          display: "block", fontSize: 12,
+fontWeight: 600,
+color,
+textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 3,
         }}>{label}</label>
         <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
           <div style={{ position: "relative", flex: 1 }}>
