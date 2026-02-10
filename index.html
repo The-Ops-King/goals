@@ -299,29 +299,29 @@ function App() {
   return (
     <div style={{ width: "100%", padding: "0 10px" }}>
       {/* Header */}
-      <div style={{
-        background: C.headerBg, borderRadius: "8px 8px 0 0", padding: "16px 24px",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        borderBottom: `1px solid ${C.cardBorder}`,
-      }}>
-        <div>
-          <div style={{ fontSize: 16, fontWeight: 700, color: C.teal, letterSpacing: 1, textTransform: "uppercase" }}>
-            CloserMetrix
-          </div>
-          <div style={{ fontSize: 13, color: C.textSecondary, marginTop: 2 }}>Revenue Pacing & Goals</div>
-        </div>
-        {clientName !== "Your Business" && (
-          <div style={{
-            fontSize: 14, color: C.textSecondary, background: C.sectionBg,
-            padding: "6px 14px", borderRadius: 4, fontWeight: 500,
-          }}>{clientName}</div>
-        )}
-      </div>
+      {/*// <div style={{*/
+      //   background: C.headerBg, borderRadius: "8px 8px 0 0", padding: "16px 24px",
+      //   display: "flex", alignItems: "center", justifyContent: "space-between",
+      //   borderBottom: `1px solid ${C.cardBorder}`,
+      // }}>
+      //   <div>
+      //     <div style={{ fontSize: 16, fontWeight: 700, color: C.teal, letterSpacing: 1, textTransform: "uppercase" }}>
+      //       CloserMetrix
+      //     </div>
+      //     <div style={{ fontSize: 13, color: C.textSecondary, marginTop: 2 }}>Revenue Pacing & Goals</div>
+      //   </div>
+      //   {clientName !== "Your Business" && (
+      //     <div style={{
+      //       fontSize: 14, color: C.textSecondary, background: C.sectionBg,
+      //       padding: "6px 14px", borderRadius: 4, fontWeight: 500,
+      //     }}>{clientName}</div>
+      //   )}
+      // </div>
 
-      {/* Pacing Title */}
+      /* Pacing Title */}
       <div style={{
         background: C.sectionBg, padding: "12px 24px", textAlign: "center",
-        borderBottom: `1px solid ${C.cardBorder}`,
+        borderRadius: "8px 8px 0 0", borderBottom: `1px solid ${C.cardBorder}`,
       }}>
         <span style={{ fontSize: 28, fontWeight: 700, color: C.textPrimary, textTransform: "uppercase", letterSpacing: 2 }}>
           Pacing
