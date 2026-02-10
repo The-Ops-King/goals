@@ -16,8 +16,7 @@ body {
     background: #212022;
     color: #e8ecf1;
     min-height: 100vh;
-    align-items: flex-start;
-    justify-content: center;
+    height: 100vh;
     padding: 20px;
   }
 </style>
@@ -294,7 +293,7 @@ const pacingRow = (label, goal, actual, pct, pace, goalColor) => (
   );
 
   return (
-<div style={{ width: "100%", margin: "0 auto" }}>
+<div style={{ width: "100%", height: "100%", margin: "0 auto", padding: "0 20px" }}>
       {/* Header */}
       <div style={{
         background: C.headerBg, borderRadius: "8px 8px 0 0", padding: "12px 20px",
