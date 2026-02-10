@@ -90,7 +90,7 @@ function Scorecard({ label, value, color = C.white }) {
   return (
     <div style={{
       background: C.cardBg, border: `1px solid ${C.cardBorder}`, borderRadius: 6,
-      padding: "10px 8px", display: "flex", flexDirection: "column",
+      padding: "14px 16px", display: "flex", flexDirection: "column",
       alignItems: "center", justifyContent: "center", flex: 1, minWidth: 0,
     }}>
       <div style={{
@@ -285,8 +285,8 @@ function App() {
     );
   }
 
-  const pacingRow = (label, goal, actual, pct, pace, goalColor) => (
-    <div style={{ display: "flex", gap: 6, marginBottom: 8 }}>
+const pacingRow = (label, goal, actual, pct, pace, goalColor) => (
+    <div style={{ display: "flex", gap: 10, marginBottom: 10 }}>
       <Scorecard label={`${label} Goal`} value={fmtDollar(goal)} color={goalColor} />
       <Scorecard label={`${label} Rev`} value={fmtDollar(actual)} color={C.orange} />
       <Scorecard label="% to Goal" value={fmtPct(pct)} color={pctColor(pct)} />
