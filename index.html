@@ -287,7 +287,7 @@ function App() {
 const pacingRow = (label, goal, actual, pct, pace, goalColor) => (
     <div style={{ display: "flex", gap: 10, marginBottom: 10 }}>
       <Scorecard label={`${label} Goal`} value={fmtDollar(goal)} color={goalColor} />
-      <Scorecard label={`${label} Rev`} value={fmtDollar(actual)} color={C.orange} />
+      <Scorecard label={`${label} Rev`} value={fmtDollar(actual)} color={C.blue} />
       <Scorecard label="% to Goal" value={fmtPct(pct)} color={pctColor(pct)} />
       <Scorecard label="On Pace" value={fmtPct(pace)} color={paceColor(pace)} />
     </div>
